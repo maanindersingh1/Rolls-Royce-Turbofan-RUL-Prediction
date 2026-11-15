@@ -4,13 +4,8 @@ AI  Project 2 (Semester 3). Predicts how many operating cycles a turbofan engine
 
 Repository: [https://github.com/maanindersingh1/Rolls-Royce-Turbofan-RUL-Prediction](https://github.com/maanindersingh1/Rolls-Royce-Turbofan-RUL-Prediction)
 
-## Pipeline
+<img width="994" height="306" alt="image" src="https://github.com/user-attachments/assets/5165d9a0-80b1-4f0f-97b4-31defc608354" />
 
-1. **Define:** Input = 14 sensors x last 30 cycles; Output = RUL (cycles)
-2. **Data:** NASA C-MAPSS, subset FD001 (100 run-to-failure engines, 21 sensors)
-3. **Process:** RUL label capped at 125, drop 7 constant sensors, split by engine (80/20), Min-Max scaling fit on train only, 30-cycle windows
-4. **Build:** LSTM (64 units) -> Dropout -> Dense(32) -> RUL; baselines: mean predictor and Random Forest
-5. **Evaluate:** RMSE, MAE, NASA score, error distribution, maintenance alerts
 
 ## Results (100 test engines)
 
