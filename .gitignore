@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.vscode/
+.idea/
+
+# Dataset files (download separately; do not publish without checking terms)
+data/train_FD001.txt
+data/test_FD001.txt
+data/RUL_FD001.txt
+data/readme.txt
+
+# Generated outputs can be reviewed before committing
+outputs/*.png
+outputs/*.json
+*.pt
+*.pth
